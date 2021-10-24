@@ -1,0 +1,38 @@
+@use './mixins';
+
+body {
+  .community-container {
+    @include mixins.media-breakpoint-down(md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .subcontainer {
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .community-rigth {
+          width: 100%;
+          height: auto;
+        }
+
+        .community-rigth {
+          height: auto;
+
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+
+    @include mixins.media-breakpoint-down(sm) {
+      .subcontainer {
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: calc(100% - 30px);
+      }
+    }
+  }
+}

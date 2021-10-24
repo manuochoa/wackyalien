@@ -1,0 +1,32 @@
+{
+  "dna": "1",
+  "name": "Not Revealed",
+  "description": "Reveal is going to be soon...",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Question_Mark.svg/1200px-Question_Mark.svg.png",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "not revealed"
+    },
+    {
+      "trait_type": "Race",
+      "value": "not revealed"
+    },
+    {
+      "trait_type": "T-shirts",
+      "value": "not revealed"
+    },
+    {
+      "trait_type": "Glasses",
+      "value": "not revealed"
+    },
+    {
+      "trait_type": "Faces",
+      "value": "not revealed"
+    },
+    {
+      "trait_type": "hair",
+      "value": "not revealed"
+    }
+  ]
+}

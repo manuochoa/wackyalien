@@ -1,0 +1,33 @@
+@use './mixins';
+
+body {
+  @include mixins.media-breakpoint-down(md) {
+    .footer {
+      width: auto;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .copyright {
+        order: 2;
+        top-bottom: 20px;
+      }
+
+      .footer-icons {
+        order: 1;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+  .footer-wrapper {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+

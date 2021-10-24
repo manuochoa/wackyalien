@@ -1,0 +1,77 @@
+@use './mixins';
+
+body {
+  .landing-container {
+    background-position: center;
+    .text-box {
+      width: auto;
+      max-width: 800px;
+
+      h1 {
+        font-size: 38px;
+      }
+
+      p {
+        font-family: "Raleway",sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    @include mixins.media-breakpoint-down(md) {
+      height: 100%;
+      .container-countdown {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .text-box {
+        width: auto;
+
+        p {
+          font-family: "Raleway",sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+
+      .buttons-landing, .mint-left {
+        width: 100%;
+      }
+
+
+      .buttons-landing {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    @include mixins.media-breakpoint-down(sm) {
+      height: 100%;
+      .buttons-landing {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        a {
+          margin-top: 10px;
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  @include mixins.media-breakpoint-down(xs) {
+    .landing-container {
+      background-image: url(../images/banner_480x1300.jpeg);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.team {
+  @media (max-width: 1520px) {
+    .card-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      flex-direction: row;
+    }
+  }
+}

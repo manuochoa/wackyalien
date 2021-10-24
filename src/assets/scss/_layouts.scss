@@ -1,0 +1,11 @@
+@use './mixins';
+
+.home-page {
+  overflow: hidden;
+}
+
+@include mixins.media-breakpoint-down(md) {
+  body, .main-container{
+    max-width: 100vw;
+  }
+}

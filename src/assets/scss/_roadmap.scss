@@ -1,0 +1,52 @@
+@use './mixins';
+
+body {
+  @include mixins.media-breakpoint-down(lg) {
+    .roadmap {
+      width: 100%;
+      height: auto;
+      max-height: unset;
+      min-height: unset;
+
+      .subcontainer {
+        padding-left: 0;
+        padding-right: 0;
+        height: auto;
+      }
+    }
+  }
+
+  @include mixins.media-breakpoint-down(sm) {
+    .roadmap {
+
+      .subcontainer {
+        .roadmap-perc {
+          display: flex;
+          flex-direction: column;
+
+          .roadmap-center-stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+          }
+
+          .roadmap-stats {
+            width: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+
+            h3 {
+              font-size: 18px;
+              text-align: center;
+            }
+            h4 {
+              font-size: 17px;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
