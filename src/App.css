@@ -86,7 +86,7 @@ HashLink {
   background-repeat: no-repeat;
   background-size: cover;
   min-width: 90vw;
-  height: calc(100vh - 96px);
+  min-height: calc(100vh - 96px);
   padding-bottom: 50px;
 }
 
@@ -171,7 +171,7 @@ HashLink {
 }
 
 .buttons-landing {
-  margin-bottom: 50px !important;
+/*   margin-bottom: 50px !important; */
 }
 
 .buttons-landing a {
@@ -1061,7 +1061,6 @@ li span {
 
   .landing-container {
     padding-bottom: 0px;
-    height: calc(100vh - 96px);
   }
 
   .community-subcontainer h1 {
@@ -1084,7 +1083,6 @@ li span {
   @media (min-width: 1500px) {
     @media (max-width: 1900px) {
       .landing-container {
-        height: 110vh;
         min-height: 600px;
       }
       .roadmap {

@@ -61,7 +61,7 @@ function Countdown() {
       {launch ? (
         <h1>You Can Mint Now!</h1>
       ) : (
-        <Stack direction="row">
+        <Stack direction="row" className={'counter-item-container'}>
           <div className="flip-number">
             <div className="days">
               <Flip value={days} />

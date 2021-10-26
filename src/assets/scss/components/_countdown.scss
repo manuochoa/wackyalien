@@ -1,0 +1,13 @@
+@use './../mixins';
+
+.container-countdown {
+  @include mixins.media-breakpoint-down(sm) {
+    .flip-number {
+      margin: 0;
+      &:not(:last-of-type):not(:first-of-type) {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

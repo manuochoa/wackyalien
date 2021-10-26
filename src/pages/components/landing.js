@@ -24,16 +24,18 @@ function Landing() {
           <Box className="text-box">
             <h1>Welcome to the Wacky Alien League</h1>
             <p>
-            Us Gonzorians are adventurous aliens native to Gonzora,
-            a planet located 9,733 light-years away from yours.
-            We have traveled far and wide in search of fun, community,
-            and opportunities, eventually making our way to Earth.
+            The Wacky Alien League (WAL) was created so that carbon-based 
+            lifeforms, aliens, and travelers of all kinds can explore, 
+            expand, and create a unique Galaxy. The Gonzorians, co-founders 
+            of WAL, came from Gonzora, a planet 9,733 light years away from Earth. 
+            Their goal is to develop WAL’s Metaverse for future collections in our community. 
             </p>
             <p>
-            As co-founders of the Wacky Alien League (WAL) we’re happy
-            to welcome you to our community! Once you have your Gonzorian
-            you gain access to our galaxy, a place where wacky aliens from
-            all across WAL’s Metaverse can gather.
+            For the first time in the history of The League, we are opening up admission 
+            to humans. Now you can not only join our community of explorers, but will also 
+            have the power to shape and guide the creation of our world. Once you secure 
+            your Gonzorian you will gain access to WAL’s Metaverse, a place to meet other 
+            Wacky Aliens, and to enjoy perks and benefits spanning the digital world and the real one.
             </p>
             <Countdown />
             <p>
@@ -50,7 +52,7 @@ function Landing() {
             <Button
               component={HashLink}
               smooth
-              to="/#comunity"
+              to="/#mint-a-gonzorian"
               className="connect-button"
               variant="contained"
               style={{ color: "#fff" }}

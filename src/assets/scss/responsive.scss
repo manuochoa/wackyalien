@@ -1,8 +1,11 @@
 @use './layouts';
-@use './header';
-@use './landing';
-@use './join';
-@use './community';
-@use './roadmap';
-@use './team';
-@use './footer';
+
+@use 'components/header';
+@use 'components/landing';
+@use 'components/join';
+@use 'components/community';
+@use 'components/roadmap';
+@use 'components/team';
+@use 'components/footer';
+
+@import "components/countdown";

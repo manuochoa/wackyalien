@@ -1,6 +1,44 @@
-@use './mixins';
+@use '../mixins';
 
 body {
+  .roadmap {
+    position: relative;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      background-image: url("./../../images/roadmap-background.jpg");
+      background-size: cover;
+
+      @include mixins.media-breakpoint-down(xs) {
+        background-image: url("./../../images/roadmap-background-mobil.jpg");
+      }
+    }
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      background-color: rgba(#000, .6);
+      left: 0;
+      right: 0;
+      z-index: 3;
+      bottom: 0;
+      mix-blend-mode: multiply;
+    }
+
+
+    .subcontainer {
+      position: relative;
+      z-index: 4;
+    }
+  }
+
   @include mixins.media-breakpoint-down(lg) {
     .roadmap {
       width: 100%;
@@ -40,6 +78,7 @@ body {
               font-size: 18px;
               text-align: center;
             }
+
             h4 {
               font-size: 17px;
               text-align: center;

@@ -6,9 +6,7 @@ export const buy = async (_amount) => {
   try {
     let value = web3.utils.toWei((_amount * 0.07).toString());
     let instance = await NFTinterface();
-    let status = await saleStatus();
     let result;
-    // if (status.publicSale) {
 
     if (canBuy()) {
       console.log("public buy");
@@ -25,7 +23,6 @@ export const buy = async (_amount) => {
     } else {
       return { status: "error", result: "not in the whitelist" };
     }
- 
   } catch (error) {
     console.log(error);
     return { status: "error", result: "something went wrong" };
@@ -37,7 +34,7 @@ const canBuy = () => {
   data.map((i) => {
     if (i.toLowerCase() === window.ethereum.selectedAddress.toLowerCase()) {
       result = true;
-      console.log(i, window.ethereum.selectedAddress);
+      return;
     }
   });
   return result;
@@ -77,20 +74,3 @@ export const buyLimit = async () => {
     console.log(error);
   }
 };
-
-// export const getTX = async () => {
-//   var transaction =
-//     "0x11d19802405cd8972aa726ffd1833135b15f44c8afda4f6e78ed21b5fb038892";
-
-//   web3.eth.getTransaction(transaction, function (err, tx) {
-//     console.log(tx);
-//     let tx_data = tx.input;
-//     let input_data = "0x" + tx_data.slice(10); // get only data without function selector
-
-//     let params = web3.eth.abi.decodeParameters(
-//       ["bytes32", "string", "string", "string"],
-//       input_data
-//     );
-//     console.log(params);
-//   });
-// };

@@ -1,4 +1,4 @@
-@use './mixins';
+@use '../mixins';
 
 body {
   .landing-container {
@@ -71,7 +71,7 @@ body {
 
   @include mixins.media-breakpoint-down(xs) {
     .landing-container {
-      background-image: url(../images/banner_480x1300.jpeg);
+      background-image: url(../../images/banner_480x1300.jpeg);
     }
   }
 }

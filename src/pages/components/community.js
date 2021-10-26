@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Stack } from "@mui/material";
-import LoadingButton from "@mui/lab/LoadingButton";
 import {
   buy,
   saleStatus,
   buyLimit,
 } from "../../blockchain/functions/functions";
+import LoadingButton from "@mui/lab/LoadingButton";
 import { useSnackbar } from "notistack";
 import exampleImg from "../../assets/images/alien.gif";
 import bigPoint1 from "../../assets/images/Frame1.png";
@@ -132,7 +132,6 @@ function Community(props) {
   const checkSaleStatus = async () => {
     let result = await saleStatus();
     setBuyLimit(await buyLimit());
-    console.log(result, "buy limit", buyLimit());
     if (result) {
       setIsSaleLive({ publicSale: result });
     }
@@ -141,8 +140,6 @@ function Community(props) {
   useEffect(() => {
     checkSaleStatus();
   }, []);
-
-  useEffect(() => {}, []);
 
   return (
     <Stack id="comunity" className="main-container community-container">
@@ -220,7 +217,7 @@ function Community(props) {
             </p>
           </Stack>
         </Stack>
-        <Stack className="community-left" spacing={2}>
+        <Stack id={"mint-a-gonzorian"} className="community-left" spacing={2}>
           <h1>Mint a Gonzorian</h1>
           <h4>0.07 ETH / each</h4>
           <Stack
