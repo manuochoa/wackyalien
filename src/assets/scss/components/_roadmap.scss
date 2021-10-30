@@ -56,7 +56,6 @@ body {
 
   @include mixins.media-breakpoint-down(sm) {
     .roadmap {
-
       .subcontainer {
         .roadmap-perc {
           display: flex;

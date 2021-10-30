@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import {Switch, Route} from "react-router-dom";
+import React, { useState } from "react";
+import { Switch, Route } from "react-router-dom";
 import Header from "./components/header";
 import Landing from "./components/landing";
 import Join from "./components/join";
@@ -10,37 +10,37 @@ import Team from "./components/team";
 import Footer from "./components/footer";
 
 function Home() {
-    const [userAddress, setUserAddress] = useState("");
+  const [userAddress, setUserAddress] = useState("");
 
-    return (
-        <div className={'home-page'}>
-            <Header userAddress={userAddress} setUserAddress={setUserAddress}/>
-            <>
-                <Switch>
-                    <Route
-                        exact
-                        path="/"
-                        render={() => (
-                            <>
-                                <Landing/>
-                                <Join/>
-                                <Community
-                                    userAddress={userAddress}
-                                    setUserAddress={setUserAddress}
-                                />
-                                <Roadmap/>
-                                <Team/>
-                            </>
-                        )}
-                    />
-                </Switch>
+  return (
+    <div className={"home-page"}>
+      <Header userAddress={userAddress} setUserAddress={setUserAddress} />
+      <>
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={() => (
+              <>
+                <Landing />
+                <Join />
+                <Community
+                  userAddress={userAddress}
+                  setUserAddress={setUserAddress}
+                />
+                <Roadmap />
+                <Team />
+              </>
+            )}
+          />
+        </Switch>
 
-                {/* <Questions /> */}
-            </>
+        {/* <Questions /> */}
+      </>
 
-            <Footer/>
-        </div>
-    );
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;

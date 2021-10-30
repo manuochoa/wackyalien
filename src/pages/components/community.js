@@ -260,5 +260,4 @@ function Community(props) {
     </Stack>
   );
 }
-
 export default Community;

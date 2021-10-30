@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Stack } from "@mui/material";
 import Flip from "./flip";
 
@@ -14,7 +14,7 @@ function Countdown() {
   const hour = minute * 60;
   const day = hour * 24;
 
-  const countDown = new Date(1635438600000).getTime();
+  const countDown = new Date(1635784200000).getTime();
 
   useEffect(() => {
     let interval = () => {
@@ -61,7 +61,7 @@ function Countdown() {
       {launch ? (
         <h1>You Can Mint Now!</h1>
       ) : (
-        <Stack direction="row" className={'counter-item-container'}>
+        <Stack direction="row" className={"counter-item-container"}>
           <div className="flip-number">
             <div className="days">
               <Flip value={days} />

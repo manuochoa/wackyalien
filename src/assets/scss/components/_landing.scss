@@ -67,6 +67,52 @@ body {
         }
       }
     }
+
+    .subscribe-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 610px;
+      flex-wrap: wrap;
+
+      p {
+        min-width: 340px;
+        flex: 1;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+
+        .button {
+          font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+          line-height: 45px;
+          font-size: 20px;
+          padding: 0 13px;
+          width: 133px;
+          height: 45px;
+          text-transform: uppercase;
+          background-color: #f2a933;
+          text-align: center;
+          border-radius: 6px;
+          font-weight: 600;
+          transition: .2s;
+          cursor: pointer;
+
+          &:hover,
+          &:focus {
+            background-color: darken(#f2a933, 20);
+          }
+        }
+      }
+    }
+    h1.success {
+      color: #0eb838;
+      font-size: 30px;
+    }
   }
 
   @include mixins.media-breakpoint-down(xs) {

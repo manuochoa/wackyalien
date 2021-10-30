@@ -125,6 +125,7 @@ body {
           opacity: 1;
           visibility: visible;
           transform: translateY(0px);
+          pointer-events: auto;
 
           a {
             padding-bottom: 0;
