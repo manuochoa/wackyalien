@@ -14,7 +14,7 @@ function Countdown() {
   const hour = minute * 60;
   const day = hour * 24;
 
-  const countDown = new Date(1635784200000).getTime();
+  const countDown = new Date(1636003800000).getTime();
 
   useEffect(() => {
     let interval = () => {

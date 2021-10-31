@@ -76,6 +76,7 @@ body {
       flex-wrap: wrap;
 
       p {
+        text-align: center;
         min-width: 340px;
         flex: 1;
       }
@@ -92,9 +93,9 @@ body {
           line-height: 45px;
           font-size: 20px;
           padding: 0 13px;
-          width: 133px;
+          width: 162px;
           height: 45px;
-          text-transform: uppercase;
+          //text-transform: uppercase;
           background-color: #f2a933;
           text-align: center;
           border-radius: 6px;

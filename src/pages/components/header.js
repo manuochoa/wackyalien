@@ -80,14 +80,9 @@ function Header(props) {
           justifyContent="center"
           alignItems="center"
         >
-          <a
-            onClick={handleClick}
-            href="https://discord.gg/A8r5aTZBDJ"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Pre-Sale
-          </a>
+          <HashLink onClick={() => setIsOpen(!isOpen)} smooth to="/#mint-a-gonzorian">
+            Mint
+          </HashLink>
           <HashLink onClick={() => setIsOpen(!isOpen)} smooth to="/#join">
             Features
           </HashLink>
