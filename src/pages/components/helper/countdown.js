@@ -59,7 +59,7 @@ function Countdown() {
       style={{ display: "flex", justifyContent: "center" }}
     >
       {launch ? (
-        <h1>You Can Mint Now!</h1>
+        <h1>1st Drop Whitelisted Can Mint Now!</h1>
       ) : (
         <Stack direction="row" className={"counter-item-container"}>
           <div className="flip-number">
