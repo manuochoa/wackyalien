@@ -89,19 +89,21 @@ body {
 
 
         .button {
-          font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+          font-family: "Raleway",sans-serif;
           line-height: 45px;
           font-size: 20px;
           padding: 0 13px;
           width: 162px;
           height: 45px;
           //text-transform: uppercase;
+          color: black;
           background-color: #f2a933;
           text-align: center;
           border-radius: 6px;
-          font-weight: 600;
+          font-weight: 800;
           transition: .2s;
           cursor: pointer;
+          box-shadow: 0px 0px 9px 2px rgb(245 44 17 / 40%);
 
           &:hover,
           &:focus {
