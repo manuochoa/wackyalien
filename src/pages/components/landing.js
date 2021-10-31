@@ -80,7 +80,7 @@ function Landing() {
                                     (extra 25x will be raffled and airdropped)
                                 </p>
                                 <div className="button-container">
-                                    <div className="button" onClick={openModal}>Presale PASS</div>
+                                    <div className="button" onClick={openModal}>1st Drop PASS</div>
                                 </div>
                             </div>
                         )}
