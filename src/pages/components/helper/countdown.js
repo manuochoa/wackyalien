@@ -14,7 +14,7 @@ function Countdown() {
   const hour = minute * 60;
   const day = hour * 24;
 
-  const countDown = new Date(1636003800000).getTime();
+  const countDown = new Date(1636133400000).getTime();
 
   useEffect(() => {
     let interval = () => {
@@ -59,7 +59,7 @@ function Countdown() {
       style={{ display: "flex", justifyContent: "center" }}
     >
       {launch ? (
-        <h1>1st Drop Whitelisted Can Mint Now!</h1>
+        <h1>Whitelisted Wallets Can Mint Now!</h1>
       ) : (
         <Stack direction="row" className={"counter-item-container"}>
           <div className="flip-number">
