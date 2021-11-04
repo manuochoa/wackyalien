@@ -76,11 +76,11 @@ function Landing() {
                         ) : (
                             <div className="subscribe-section">
                                 <p>
-                                    Gonzorians 1st Drop on Nov. 5<br/>
+                                    Gonzorians Upcoming Drop Access<br/>
                                     (extra 25x will be raffled and airdropped)
                                 </p>
                                 <div className="button-container">
-                                    <div className="button" onClick={openModal}>1st Drop PASS</div>
+                                    <div className="button" onClick={openModal}>Get Your PASS</div>
                                 </div>
                             </div>
                         )}
@@ -162,7 +162,7 @@ function Landing() {
 
                     </div>
                     <h1 className="title">Join the Whitelist</h1>
-                    <p className="text">Gonzorians 1st Drop on Nov. 5<br/>
+                    <p className="text">Gonzorians Upcoming Drop Access<br/>
                         (extra 25x will be raffled and airdropped)</p>
                     <input
                         type="email"
