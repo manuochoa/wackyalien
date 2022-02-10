@@ -23,7 +23,7 @@ function Community(props) {
   const [isLoading, setIsLoading] = useState(false);
   const [isSaleLive, setIsSaleLive] = useState({
     onlyWhitelist: false,
-    publicSale: false,
+    publicSale: true,
   });
   const [NFTbuyLimit, setBuyLimit] = useState(10);
 
